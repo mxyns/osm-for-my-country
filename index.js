@@ -126,7 +126,7 @@ function handleInit(argv) {
 }
 
 function handleExport(argv) {
-  if (argv.u) nconf.set('exprot:tileServerURL', argv.u)
+  if (argv.u) nconf.set('export:tileServerURL', argv.u)
   if (argv.t) nconf.set('export:tileList', argv.t)
   if (argv.o) nconf.set('export:dir', argv.o)  
   
