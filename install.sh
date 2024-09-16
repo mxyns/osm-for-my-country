@@ -59,7 +59,7 @@ wget -O - http://m.m.i24.cc/osmfilter.c |cc -x c - -O3 -o osmfilter
 
 echo "Installing nvm ..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
-source ~/.bashrc
+source ~/.nvm/nvm.sh
 echo "Installing node.js ..."
 nvm install 4.4.7
 echo "Installing pm2 ..."
