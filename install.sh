@@ -58,9 +58,8 @@ echo "Installing OSM tool 'osmfilter' ..."
 wget -O - http://m.m.i24.cc/osmfilter.c |cc -x c - -O3 -o osmfilter
 
 echo "Installing nvm ..."
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.4/install.sh | bash
-export NVM_DIR="~/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+source ~/.bashrc
 echo "Installing node.js ..."
 nvm install 4.4.7
 echo "Installing pm2 ..."
