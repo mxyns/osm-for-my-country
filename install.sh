@@ -8,7 +8,7 @@ if python -mplatform | grep -qi centos; then
   sudo yum install unzip -y
   sudo yum install git -y
 fi
-if python -mplatform | grep -qi ubuntu; then
+if lsb_release -a | grep -qi Ubuntu; then
   sudo apt-get update
   #sudo apt-get install postgresql-9.5-postgis-2.2 pgadmin3 postgresql-contrib-9.5
   sudo apt-get install gcc -y
