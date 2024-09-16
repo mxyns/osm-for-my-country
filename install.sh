@@ -41,7 +41,7 @@ echo "*:*:*:$USER:pgpass" > ~/.pgpass
 chmod 0600 ~/.pgpass
 
 echo "installing osm2pgsql ..."
-if python -mplatform | grep -qi ubuntu; then
+if lsb_release -a | grep -qi Ubuntu; then
   sudo apt-get install osm2pgsql -y
 fi
 
