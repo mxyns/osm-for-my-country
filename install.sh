@@ -61,7 +61,7 @@ echo "Installing nvm ..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 source ~/.nvm/nvm.sh
 echo "Installing node.js ..."
-nvm install 4.4.7
+nvm install 20
 echo "Installing pm2 ..."
 npm install pm2 -g
 echo "Installing http-server ..."
